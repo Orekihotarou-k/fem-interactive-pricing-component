@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="container flex">
+    <div class="pricing-component">
+      <header class="pricing-titles">
+        <h1 class="heading">Simple, traffic-based pricing</h1>
+        <p class="desc">Sign-up for our 30-day trial. No credit card required.</p>
+      </header>
+
+
+        <div class="pricing-card">
+          <header class="card-titles flex">
+            <h2 class="card-heading">100k Pageviews</h2>
+            <div class="slider-numbers">
+              <p class="sliderValue">$16.00</p>
+              <span>/month</span>
+            </div>
+          </header>
+          <label for="slider">
+            <input type="range" min="0" max="32" id="slider" value="16.00">
+          </label>
+
+          <div class="slider-numbers slider-numbers--mobile">
+            <p class="sliderValue">$16.00</p>
+            <span>/month</span>
+          </div>
+
+          <div class="toggle-section flex">
+            <p>Monthly Billing</p>
+            <button class="toggle-button" aria-hidden="true" aria-label="monthly/yearly toggle button" onclick="switchSlider">
+            </button>
+            <p class="billing">Yearly Billing <span class="discount">25% discount</span> <span class="discount mobile-discount">25%</span></p>
+          </div>
+          <hr>
+          <div class="details-section flex">
+            <ul class="detail-list flex">
+              <li><img src="images/icon-check.svg" alt="" aria-hidden="true">Unlimited websites</li>
+              <li><img src="images/icon-check.svg" alt="" aria-hidden="true">100% data ownership</li>
+              <li><img src="images/icon-check.svg" alt="" aria-hidden="true">Email reports</li>
+            </ul>
+            <button>Start my trial</button>
+          </div>
+        
+
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>
