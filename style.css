@@ -145,6 +145,7 @@ body::before {
 
 .container {
     justify-content: center;
+    height: 100dvh;
 }
     
 .card-titles {
